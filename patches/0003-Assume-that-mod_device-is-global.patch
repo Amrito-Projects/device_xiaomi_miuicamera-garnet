@@ -1,19 +1,18 @@
-From b97bfd26682ff29f54ed93f5a59c01aa9a17358e Mon Sep 17 00:00:00 2001
+From c434973114b4f3ba103edaa0b9f174d4f24846a7 Mon Sep 17 00:00:00 2001
 From: danielml <daniel@danielml.dev>
-Date: Fri, 19 Apr 2024 17:32:08 +0200
-Subject: [PATCH 4/7] Assume that mod_device is global
+Date: Sat, 22 Mar 2025 20:47:45 -0300
+Subject: [PATCH] miuicamera-garnet: Assume that mod_device is global
 
 Otherwise, the app tries to start a custom permissions dialog which
 has dependencies on HyperOS Security Center app
 
 Change-Id: I8962a6e409f5aa30f84fccd482fefe78767069c2
-Signed-off-by: danielml <daniel@danielml.dev>
 ---
  smali_classes4/ub/e.smali | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/smali_classes4/ub/e.smali b/smali_classes4/ub/e.smali
-index 883d477c6..a9df9d261 100644
+index 883d477c..a9df9d26 100644
 --- a/smali_classes4/ub/e.smali
 +++ b/smali_classes4/ub/e.smali
 @@ -566,7 +566,7 @@
@@ -26,5 +25,5 @@ index 883d477c6..a9df9d261 100644
      sput-boolean v0, Lub/e;->E:Z
  
 -- 
-2.43.0
+2.48.1
 
